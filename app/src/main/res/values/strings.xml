@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Java Deepak Sir</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="login">Login</string>
+    <string name="name">Name :</string>
+    <string-array name="Cities">
+        <item>Select City</item>
+        <item>Bihar</item>
+        <item>Bangalore</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+
+    </string-array>
+</resources>

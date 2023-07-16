@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:paddingBottom="30dp"
+        android:paddingTop="50dp"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editback"
+        android:hint="Enter name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editback"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editback"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Gender :"
+        android:textSize="15sp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="15sp"
+            />
+
+          <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Female"
+              android:textSize="15sp"
+              android:id="@+id/rb_female"
+              />
+        <RadioButton
+            android:id="@+id/rb_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select language :"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android"
+                android:layout_marginRight="15dp"
+                android:textSize="15sp"
+                android:id="@+id/cb_android"
+
+
+                />
+            <CheckBox
+                android:id="@+id/cb_ios"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iOS"
+                android:layout_marginRight="15dp"
+                android:textSize="15sp"
+
+
+                />
+            <CheckBox
+                android:id="@+id/cb_hybrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hybrid"
+                android:layout_marginRight="15dp"
+                android:textSize="15sp"
+
+                />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/sp_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editback"
+            android:entries="@array/Cities"
+            android:minHeight="48dp"
+            android:padding="20dp"
+
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:onClick="submit"
+        android:text="Submit"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"/>
+
+</LinearLayout>
